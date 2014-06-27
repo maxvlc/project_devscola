@@ -1,0 +1,45 @@
+<div id="featured">
+	<div class="container">
+		<div class="row">
+			<div class="12u">
+				<section>
+					<header>
+						<h2><center>Selecciona el modelo de la invitación que desees</h2></center>
+					</header>
+				</section>
+			</div>
+		</div>
+		<form action="/cards" method="post">
+			<div class="row">
+				<div class="4u">
+					<section>
+						<p><img src="/images/card01.jpg" height="200"></p>
+						<p><input type="radio" name="card" value="card01"></p>
+					</section>
+				</div>
+				<div class="row">
+					<div class="4u">
+						<section>					
+							<p><img src="/images/card02.jpg" height="200"></p>
+							<p><input type="radio" name="card" value="card02"></p>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="4u">
+						<section>
+							<p><img src="/images/card03.jpg" height="200"></p>
+							<p><input type="radio" name="card" value="card03"></p>
+						</section>
+					</div>
+				</div>
+				<input type="hidden" name="whoinvites" value=<%= user_data[:whoinvites] %>>
+				<input type="hidden" name="eventdate" value=<%= user_data[:eventdate] %>>
+				<input type="hidden" name="eventplace" value=<%= user_data[:eventplace] %>>
+				<input type="hidden" name="guestname" value=<%= user_data[:guestname] %>>
+				<input type="hidden" name="event" value=<%= user_data[:event] %>>
+				<p><input type="submit" value="Select Card"></p>
+			</div>
+		</form>
+	</div>
+</div>
