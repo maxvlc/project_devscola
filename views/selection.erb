@@ -8,38 +8,42 @@
 					</header>
 				</section>
 			</div>
-		</div>
-		<form action="/cards" method="post">
-			<div class="row">
-				<div class="4u">
-					<section>
-						<p><img src="/images/card01.jpg" height="200"></p>
-						<p><input type="radio" name="card" value="card01"></p>
-					</section>
-				</div>
-				<div class="row">
-					<div class="4u">
-						<section>					
-							<p><img src="/images/card02.jpg" height="200"></p>
-							<p><input type="radio" name="card" value="card02"></p>
-						</section>
+			<div class="12u">
+				<form action="/cards" method="post">
+					<div class="row">
+						<div class="4u">
+							<section>
+								<center>
+								<p><img src="/images/card01.jpg" height="200"></p>
+								<p><input type="radio" name="card" value="card01"></p>
+							</center>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<center>					
+								<p><img src="/images/card02.jpg" height="200"></p>
+								<p><input type="radio" name="card" value="card02"></p>
+							</center>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<center>
+								<p><img src="/images/card03.jpg" height="200"></p>
+								<p><input type="radio" name="card" value="card03"></p>
+								</center>
+							</section>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="4u">
-						<section>
-							<p><img src="/images/card03.jpg" height="200"></p>
-							<p><input type="radio" name="card" value="card03"></p>
-						</section>
-					</div>
-				</div>
-				<input type="hidden" name="whoinvites" value=<%= user_data[:whoinvites] %>>
-				<input type="hidden" name="eventdate" value=<%= user_data[:eventdate] %>>
-				<input type="hidden" name="eventplace" value=<%= user_data[:eventplace] %>>
-				<input type="hidden" name="guestname" value=<%= user_data[:guestname] %>>
-				<input type="hidden" name="event" value=<%= user_data[:event] %>>
-				<p><input type="submit" value="Select Card"></p>
+					<input type="hidden" name="whoinvites" value=<%= party_data[:whoinvites] %>>
+					<input type="hidden" name="eventdate" value=<%= party_data[:eventdate] %>>
+					<input type="hidden" name="eventplace" value=<%= party_data[:eventplace] %>>
+					<input type="hidden" name="guestname" value=<%= party_data[:guestname] %>>
+					<input type="hidden" name="event" value=<%= party_data[:event] %>>
+					<p><center><input type="submit" value="Preview..."></center></p>
+				</form>
 			</div>
-		</form>
+		</div>
 	</div>
 </div>

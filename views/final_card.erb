@@ -1,0 +1,54 @@
+<div id="featured">
+	<div class="container">
+		<div class="row">
+			<div class="12u">
+				<section>
+					<header>
+						<h2>
+							<center>Aqui tienes tu invitación personal.</center>
+						</h2>
+					</header>
+				</section>
+			</div>
+			<div class="12u">
+				<table background="/images/<%= party_data[:card] %>.jpg" height="400" width="600">
+					<tr>
+						<td>
+							<center>
+								<br><br>Tarjeta personal de <%= party_data[:whoinvites] %> para 
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								<%= party_data[:guestname] %> para la fiesta que tendŕa lugar el <%= party_data[:eventdate] %>.
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								La temática de la fiesta será <%= party_data[:event] %> y se celebrará en <%= party_data[:eventplace] %>, se ruega acudir con vestuario adecuado a la misma.
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								Estaría encantado de tenerte en ella.
+							</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								Un abrazo y nos vemos allí :)
+							</center>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
