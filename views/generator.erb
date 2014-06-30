@@ -10,20 +10,21 @@
 					</header>
 				</section>
 			</div>
-			<div class="6u">
-				<img src="/images/<%= party_data[:card] %>.jpg" width="400" name="<%= party_data[:card] %>">
-			</div>
-			<div class="6u">
-				<section>
-					<p><center>Invitación personal de <%= party_data[:whoinvites] %> para </center></p>
-					<p><center><%= party_data[:guestname] %> para la fiesta que tendŕa lugar el <%= party_data[:eventdate] %>.</center></p>
-					<p><center>La temática de la fiesta será <%= party_data[:event] %> y se celebrará en <%= party_data[:eventplace] %>, se ruega acudir con vestuario adecuado a la misma.</center></p>
-					<p><center>Estaría encantado de tenerte en ella.</center></p>
-					<p><center>Atentamente...</center></p>
-				</section>
-			</div>
 			<div class="12u">
-				<center><a href="http://localhost:9393/<%= party_data[:card] %>/<%= party_data[:whoinvites] %>/<%= party_data[:guestname] %>/<%= party_data[:eventdate] %>/<%= party_data[:event] %>/<%= party_data[:eventplace] %>">Dirección del Evento</a></center>
+				<div class="imagen">
+					<img src="/images/<%= party_data[:card] %>.jpg">
+					<div class="img_text">
+						<p>Invitación personal de <%= party_data[:whoinvites] %> para ti  </p>
+						<p><%= party_data[:guestname] %> para la fiesta que tendŕa lugar el próximo <%= party_data[:eventdate] %>.</p>
+						<p>La temática de la fiesta será <%= party_data[:event] %> y se celebrará en <%= party_data[:eventplace] %>, se ruega acudir con vestuario adecuado a la misma.</p>
+						<p>Estaría encantado de tenerte en ella.</p>
+						<p>Atentamente...</p>
+					</div>
+				</div>
+
+
+				<div class="12u">
+				<center><h3><a href="http://localhost:9393/<%= party_data[:card] %>/<%= party_data[:whoinvites] %>/<%= party_data[:guestname] %>/<%= party_data[:eventdate] %>/<%= party_data[:event] %>/<%= party_data[:eventplace] %>">Guarda la Dirección del Evento</a></h3></center>
 			</div>
 		</div>
 	</div>

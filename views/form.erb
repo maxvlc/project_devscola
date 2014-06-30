@@ -4,17 +4,28 @@
 			<div class="12u">
 				<section>
 					<header>
-						<h2>Desde aquí puedes generar las invitaciones para tu evento</h2>
-						<h2>Rellena el Formulario</h2>
+						<h2>Genera las invitaciones para tu evento rellenando el siguiente formulario.</h2>
 					</header>
-					<form action="/form" method="post">
-						<b>Who invited?:<input type="text" name="whoinvites" required=true></b><br>
-						<b>When is it?:<input type="text" name="eventdate" required=true></b><br>
-						<b>Where is the event?:<input type="text" name="eventplace" required=true></b><br>
-						<b>Guest name:<input type="text" name="guestname" required=true></b><br>
-						<b>Event:<input type="text" name="event" required=true><br>
-						<input type="submit" value="To Card Model >>">
-					</form>
+					<div class="form">
+						<form action="/form" method="post">						
+							<p>Nombre del Anfitrión
+							<input type="text" name="whoinvites" placeholder="Nombre" required=true>
+							</p>
+							<p>Fecha del Evento
+								<input type="text" name="eventdate" placeholder="Fecha" required=true>
+							</p>
+							<p>Lugar de Celebración
+								<input type="text" name="eventplace" placeholder="Lugar" required=true>
+							</p>
+							<p>Nombre del Invitado
+								<input type="text" name="guestname" placeholder="Invitado" required=true>
+							</p>
+							<p>Evento, Tipo de Evento
+								<input type="text" name="event" placeholder="Evento..." required=true>
+							</p>
+							<center><input type="submit" class="button_class" value="Modelo"></center>
+						</form>
+					</div>
 				</section>
 			</div>
 		</div>
