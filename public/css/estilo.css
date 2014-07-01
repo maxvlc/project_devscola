@@ -1,16 +1,3 @@
-.table, th, td {
-	background-image: url(../images/<%= party_data[:card] %>.jpg);
-	background-size: cover;
-	border: 1px solid black;
-	border-collapse: collapse;
-	margin-left: 0.7em;
-	padding: 0.80em 1.2em;
-	letter-spacing: 0.06em;
-	text-decoration: none;
-	text-align: right;
-	font-size: 1em;
-}
-
 .fondo {
 	position:absolute;
 	background: url(/images/404error.jpg) no-repeat center center fixed; 

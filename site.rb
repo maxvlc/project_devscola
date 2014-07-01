@@ -1,5 +1,8 @@
 require 'rubygems'
 require 'sinatra'
+require 'i18n'
+
+
 
 get '/' do
 	erb :form
@@ -14,7 +17,7 @@ post '/cards' do
 end
 
 get '/:card/:whoinvites/:guestname/:eventdate/:event/:eventplace' do
-  erb :final_card, :locals => { :party_data => params }
+  erb :final_card, :locals => { :party_data => params }, :layout => false
 end
 
 not_found do
