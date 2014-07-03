@@ -4,23 +4,23 @@
 			<div class="12u">
 				<section>
 					<header>
-						<h2>Genera las invitaciones para tu evento rellenando el siguiente formulario.</h2>
+						<h2><%= I18n.t('first_line') %></h2>
 					</header>
 					<div class="form">
-						<form action="/form" method="post">						
-							<p>Nombre del Anfitrión
+						<form action="form" method="post">						
+							<p><%= I18n.t('form_host_name') %>
 							<input type="text" name="whoinvites" placeholder="Nombre" required=true>
 							</p>
-							<p>Fecha del Evento
+							<p><%= I18n.t('form_event_date') %>
 								<input type="text" name="eventdate" placeholder="Fecha" required=true>
 							</p>
-							<p>Lugar de Celebración
+							<p><%= I18n.t('form_place') %>Lugar de Celebración
 								<input type="text" name="eventplace" placeholder="Lugar" required=true>
 							</p>
-							<p>Nombre del Invitado
+							<p><%= I18n.t('form_guest_name') %>
 								<input type="text" name="guestname" placeholder="Invitado" required=true>
 							</p>
-							<p>Evento, Tipo de Evento
+							<p><%= I18n.t('form_event') %>
 								<input type="text" name="event" placeholder="Evento..." required=true>
 							</p>
 							<center><input type="submit" class="button_class" value="Modelo"></center>

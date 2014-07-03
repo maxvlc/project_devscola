@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Generador de Invitaciones</title>
+		<title><%= I18n.t('title') %></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Ticket de reserva" />
 		<meta name="keywords" content="" />
@@ -27,7 +27,7 @@
 						<section>
 							<header>
 								<h2>
-									<center>Aquí tienes tarjeta de invitación. Imprímela o guardatela y presentala al llegar al evento.</center>
+									<center><%= I18n.t('final_title') %></center>
 								</h2>
 							</header>
 						</section>
@@ -36,11 +36,11 @@
 						<div class="imagen">
 							<img src="/images/<%= party_data[:card] %>.jpg">
 							<div class="img_text">
-								<p>Invitación personal de <%= party_data[:whoinvites] %> para ti  </p>
-								<p><%= party_data[:guestname] %> para la fiesta que tendŕa lugar el próximo <%= party_data[:eventdate] %>.</p>
-								<p>La temática de la fiesta será <%= party_data[:event] %> y se celebrará en <%= party_data[:eventplace] %>, se ruega acudir con vestuario adecuado a la misma.</p>
-								<p>Estaría encantado de tenerte en ella.</p>
-								<p>Atentamente...</p>
+								<p><%= I18n.t('card_host_name') %><%= party_data[:whoinvites] %><%= I18n.t('card_host_name_bis') %></p>
+								<p><%= party_data[:guestname] %><%= I18n.t('card_event_date') %><%= party_data[:eventdate] %>.</p>
+								<p><%= I18n.t('card_event') %><%= party_data[:event] %><%= I18n.t('card_event_place') %><%= party_data[:eventplace] %><%= I18n.t('card_event_place_bis') %></p>
+								<p><%= I18n.t('thanks') %></p>
+								<p<%= I18n.t('thanks_bye') %></p>
 							</div>
 						</div>
 					</div>
