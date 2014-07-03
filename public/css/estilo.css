@@ -9,6 +9,12 @@
 	height: auto;
 }
 
+.idiom_select {
+	/*position: absolute;*/
+	text-align: right;
+	text-decoration: none;
+	color: #B5E622;
+}
 p {
 	text-align: center;
 }
@@ -18,13 +24,13 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-   color: #3F659A;
+   color: #B5E622;
 }
 a:hover {
-   color: #3F659A;
+   color: #B5E622;
 }
 a:active {
-   color: #3F659A;
+   color: #B5E622;
 }
 
 h3 {

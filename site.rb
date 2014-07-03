@@ -21,7 +21,6 @@ before '/:locale/*' do
   request.path_info = '/' + params[:splat ][0]
 end
 
-
 get '/' do
 	erb :form
 end
