@@ -10,10 +10,9 @@
 }
 
 .idiom_select {
-	/*position: absolute;*/
+	border: 0px solid #CCC;
+	float: right;
 	text-align: right;
-	text-decoration: none;
-	color: #B5E622;
 }
 p {
 	text-align: center;
@@ -102,7 +101,9 @@ h4 {
 	position:relative;
 	top:1px;
 }
-
+.idiom_img {
+	width: 50px;
+}
 .imagen {
 	width: 1200px;
 	height: 800px;

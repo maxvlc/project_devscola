@@ -1,4 +1,8 @@
 <div id="featured">
+	<div class="idiom_select">
+		<a href='/en/'><image class="idiom_img" src="/images/gb.png"></a>
+		<a href='/es/'><image class="idiom_img" src="/images/es.png"></a>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="12u">
@@ -23,7 +27,7 @@
 							<p><%= I18n.t('form_event') %>
 								<input type="text" name="event" placeholder="Evento..." required=true>
 							</p>
-							<center><input type="submit" class="button_class" value="Modelo"></center>
+							<center><input type="submit" class="button_class" value="<%= I18n.t('form_value') %>"></center>
 						</form>
 					</div>
 				</section>

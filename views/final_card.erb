@@ -20,28 +20,26 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
 	<body class="homepage">
-		<div id="featured">
-			<div class="container">
-				<div class="row">
-					<div class="12u">
-						<section>
-							<header>
-								<h2>
-									<center><%= I18n.t('final_title') %></center>
-								</h2>
-							</header>
-						</section>
-					</div>
-					<div class="12u">
-						<div class="imagen">
-							<img src="/images/<%= party_data[:card] %>.jpg">
-							<div class="img_text">
-								<p><%= I18n.t('card_host_name') %><%= party_data[:whoinvites] %><%= I18n.t('card_host_name_bis') %></p>
-								<p><%= party_data[:guestname] %><%= I18n.t('card_event_date') %><%= party_data[:eventdate] %>.</p>
-								<p><%= I18n.t('card_event') %><%= party_data[:event] %><%= I18n.t('card_event_place') %><%= party_data[:eventplace] %><%= I18n.t('card_event_place_bis') %></p>
-								<p><%= I18n.t('thanks') %></p>
-								<p<%= I18n.t('thanks_bye') %></p>
-							</div>
+		<div class="container">
+			<div class="row">
+				<div class="12u" style="color:#ffffff;">
+					<section>
+						<header>
+							<h2>
+								<center><%= I18n.t('final_title') %></center>
+							</h2>
+						</header>
+					</section>
+				</div>
+				<div class="12u">
+					<div class="imagen">
+						<img src="/images/<%= party_data[:card] %>.jpg">
+						<div class="img_text">
+							<p><%= I18n.t('card_host_name') %><%= party_data[:whoinvites] %><%= I18n.t('card_host_name_bis') %></p>
+							<p><%= party_data[:guestname] %><%= I18n.t('card_event_date') %><%= party_data[:eventdate] %>.</p>
+							<p><%= I18n.t('card_event') %><%= party_data[:event] %><%= I18n.t('card_event_place') %><%= party_data[:eventplace] %><%= I18n.t('card_event_place_bis') %></p>
+							<p><%= I18n.t('thanks') %></p>
+							<p><%= I18n.t('thanks_bye') %></p>
 						</div>
 					</div>
 				</div>

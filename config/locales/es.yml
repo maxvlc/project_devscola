@@ -21,4 +21,5 @@ es:
   thanks_bye: "Atentamente..."
   event_direction: "Guarda la Dirección del Evento"
   event_theme: "Selecciona el modelo de la invitación que más relacionado con la temática de tu evento."
-  final_title: "Aquí tienes tarjeta de invitación. Imprímela o guardatela y presentala al llegar al evento."
+  final_title: "Aquí tienes tu tarjeta. Imprímela o guardatela y preséntala al llegar al evento."
+  form_value: "Modelo"
