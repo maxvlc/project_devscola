@@ -57,6 +57,43 @@ h4 {
   background-color: transparent;
 }
 
+.picture {
+	float: right;
+	/*position: relative;*/
+	height: 170;
+}
+.idiom_img {
+	width: 50px;
+	opacity: 0.4;
+}
+
+.idiom_img:hover{
+	opacity: 1.0;
+}
+
+.imagen {
+	width: 1200px;
+	height: 800px;
+	float:left;
+	position:relative;
+}
+.imagen .img_text {
+	font-family: 'Dancing Script', cursive;
+	font-size:30px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	width:1000px;
+	position:absolute;
+	top:100px;
+	left:100px;
+}
+
 .button_class {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -101,28 +138,3 @@ h4 {
 	position:relative;
 	top:1px;
 }
-.idiom_img {
-	width: 50px;
-}
-.imagen {
-	width: 1200px;
-	height: 800px;
-	float:left;
-	position:relative;
-}
-.imagen .img_text {
-	font-family: 'Dancing Script', cursive;
-	font-size:30px;
-	font-weight:bold;
-	font-style:normal;
-	height:30px;
-	line-height:30px;
-	width:100px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
-	width:1000px;
-	position:absolute;
-	top:100px;
-	left:100px;
-}	
