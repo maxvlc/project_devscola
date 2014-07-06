@@ -3,7 +3,7 @@ en:
   error: "Error 404, errooorrr... 404!!!"
   error_first_line: "You can back to "
   error_second_line: "and restart it with the form again."
-  first_line: "Make your owns party tickets for your event filling the form."
+  first_line: "Make your owns party tickets for your private events filling this form."
   form_host_name: "Your Name like party manager"
   form_event_date: "Date of event"
   form_place: "Place for the event"

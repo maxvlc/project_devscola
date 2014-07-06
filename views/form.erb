@@ -12,23 +12,41 @@
 						<h2><%= I18n.t('first_line') %></h2>
 					</header>
 					<div class="form">
-						<form action="form" method="post">						
-							<p><%= I18n.t('form_host_name') %>
-							<input type="text" name="whoinvites" placeholder="Nombre" required=true>
-							</p>
-							<p><%= I18n.t('form_event_date') %>
-								<input type="text" name="eventdate" placeholder="Fecha" required=true>
-							</p>
-							<p><%= I18n.t('form_place') %>
-								<input type="text" name="eventplace" placeholder="Lugar" required=true>
-							</p>
-							<p><%= I18n.t('form_guest_name') %>
-								<input type="text" name="guestname" placeholder="Invitado" required=true>
-							</p>
-							<p><%= I18n.t('form_event') %>
-								<input type="text" name="event" placeholder="Evento..." required=true>
-							</p>
-							<center><input type="submit" class="button_class" value="<%= I18n.t('form_value') %>"></center>
+						<form method="post" action="form">
+							<dl>
+								<dt>
+									<label for="whoinvites"><%= I18n.t('form_host_name') %></label>
+								</dt>
+								<dd><input type="text" name="whoinvites" required="true" size="30" /></dd>
+							</dl>
+							<dl>
+								<dt>
+									<label for="eventdate"><%= I18n.t('form_event_date') %></label>
+								</dt>
+								<dd><input type="text" name="eventdate" required=true size="10" /></dd>
+							</dl>
+							<dl>
+								<dt>
+									<label for="eventplace"><%= I18n.t('form_place') %></label>
+								</dt>
+								<dd><input type="text" name="eventplace" size="50" /></dd>
+							</dl>
+							<dl>
+								<dt>
+									<label for="guestname"><%= I18n.t('form_guest_name') %></label>
+								</dt>
+								<dd><input type="text" name="guestname" required=true size="30" /></dd>
+							</dl>
+							<dl>
+								<dt>
+									<label for="event"><%= I18n.t('form_event') %></label>
+								</dt>
+								<dd><input type="text" name="event" required=true size="50" /></dd>
+							</dl>
+							<div id="submit_buttons">
+								<button type="reset">Reset</button>
+								<button type="submit" value="<%= I18n.t('form_value') %>">Submit</button>
+							</div>
 						</form>
 					</div>
 				</section>
