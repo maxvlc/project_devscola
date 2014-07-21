@@ -30,12 +30,18 @@ post '/form' do
 end
 
 post '/cards' do
+  params[:eventdate] = convert_data(params[:eventdate])
 	erb :generator, :locals => { :party_data => params }
 end
 
 get '/:card/:whoinvites/:guestname/:eventdate/:event/:eventplace' do
+  convert_data(params[:eventdate])
   params[:card] = 'card01' unless valid_template?(params[:card])  
   erb :final_card, :locals => { :party_data => params }, :layout => false
+end
+
+def convert_data(data_to_convert)
+  data_to_convert.gsub("\/", "-")
 end
 
 not_found do
